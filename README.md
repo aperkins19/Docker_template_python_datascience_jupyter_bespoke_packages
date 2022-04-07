@@ -45,7 +45,7 @@ Be sure to stick the url in it's own quotes as below. This enters it as a string
 
 4. Download/clone the repo from git or unzip the zip file.
 
-`docker clone `
+`docker clone https://github.com/aperkins19/Docker_template_python_datascience_jupyter_bespoke_packages`
 
 5. Define the python packages that you wish to use in `requirements.txt` file.
 e.g.  
