@@ -11,7 +11,7 @@ a.j.p.perkins@sms.ed.ac.uk
 
 BUILD AND RUN DOCKER CONTAINER.
 
-1. Check Docker is installed.  
+### 1. Check Docker is installed.  
 
 If you've never installed Docker, use this tutorial.  
 https://www.youtube.com/watch?v=_9AWYlt86B8
@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=_9AWYlt86B8
 Check it's there:  
 `docker --version`
 
-2. Check that the docker Daemon is actually running.
+### 2. Check that the docker Daemon is actually running.
 
 `docker ps`
 
