@@ -35,7 +35,7 @@ This youtube vid will help you troubleshoot.
 https://www.youtube.com/watch?v=YFUhdxI4kcA
 
 
-3. Open command line and navigate to the project folder
+### 3. Open command line and navigate to the project folder
 
 `cd "C://mypath/directory/my project/subfolder"`
 
@@ -47,21 +47,21 @@ https://www.youtube.com/watch?v=YFUhdxI4kcA
 ![navigation](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/git3/effecient_navigation.png)
 
 
-4. Download/clone the repo from git or unzip the zip file.
+### 4. Download/clone the repo from git or unzip the zip file.
 
 `docker clone https://github.com/aperkins19/Docker_template_python_datascience_jupyter_bespoke_packages`
 
-5. Define the python packages that you wish to use in `requirements.txt` file.
+### 5. Define the python packages that you wish to use in `requirements.txt` file.
 e.g.  
 matplotlib  
 pandas  
 numpy  
 
-6. Build the docker image
+### 6. Build the docker image
 
 `docker build -t jupyter_with_bespoke_python_packages .`
 
-7. Run your container on port 8888
+### 7. Run your container on port 8888
 e.g.
 
 Windows:  
@@ -80,7 +80,7 @@ The way it works is by:
 * Starting a jupyter server.
 
 
-8. If it has started correctly, you'll get a url token. Copy the token provided into your brower URL
+### 8. If it has started correctly, you'll get a url token. Copy the token provided into your brower URL
 
 It should look like this:
 
@@ -99,9 +99,10 @@ If it still doesn't work, try mapping port 8888 on the container side to a diffe
 e.g. -p 8888:9999
 
 
-# Close
+# Conclusion
 
 You can now write jupyter Notebooks for data science.  
+*To make a new one, click the NEW button in the top right on the Juptyer File Explore and select 'Python Notebook'.*
 The files in the container should be mapped to the local directory specified in step 3.
 
 I hope you find this useful and have fun!
