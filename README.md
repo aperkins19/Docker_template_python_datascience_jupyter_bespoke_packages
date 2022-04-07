@@ -35,10 +35,14 @@ This youtube vid will help you troubleshoot.
 https://www.youtube.com/watch?v=YFUhdxI4kcA
 
 
-3. Open command line and navigate to the unpacked directory
+3. Open command line and navigate to the project folder
 
-You can get the path by 'Copy address as text' in the URL of your file manager.  
-Be sure to stick the url in it's own quotes as below. This enters it as a string and will allow CMD to read any spaces in the path correctly.
+  I have a tip for doing this which you may find useful:  
+    * Open the project folder in File Explorer/Finder and 'Copy Address as text' (*See Image*), then paste that address into the Command Line **within double quotes**.  
+    Be sure to stick the url in it's own quotes as below. This enters it as a string and will allow CMD to read any spaces in the path correctly.  
+    This will allow you to jump to the target directory in one step rather than tedious: `cd documents`, `cd labbook`, `cd myexperiments` navigation.  
+
+![navigation](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/git3/effecient_navigation.png)
 
 
 `cd "C://mypath/directory/my project/subfolder"`
