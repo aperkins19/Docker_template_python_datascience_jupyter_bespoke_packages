@@ -102,21 +102,21 @@ I hope you find this useful and have fun!
 
 
 My full list of requirements for reference:
-numpy==1.16
-pandas
-matplotlib
-sklearn
-scikit-learn
-scipy
-seaborn
-pymc3
-patsy
-lxml
-ipython
-ipywidgets
-mkl-service
-pydot
-graphviz
-setuptools
-theano-pymc
-xlrd
+numpy==1.16  
+pandas  
+matplotlib  
+sklearn  
+scikit-learn  
+scipy  
+seaborn  
+pymc3  
+patsy  
+lxml  
+ipython  
+ipywidgets  
+mkl-service  
+pydot  
+graphviz  
+setuptools  
+theano-pymc  
+xlrd  
