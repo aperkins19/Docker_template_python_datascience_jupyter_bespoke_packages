@@ -102,7 +102,7 @@ e.g. -p 8888:9999
 # Conclusion
 
 You can now write jupyter Notebooks for data science.  
-*To make a new one, click the NEW button in the top right on the Juptyer File Explore and select 'Python Notebook'.*
+**To make a new one, click the *NEW* button in the top right on the Juptyer File Explorer and select 'Python Notebook'.**  
 The files in the container should be mapped to the local directory specified in step 3.
 
 I hope you find this useful and have fun!
