@@ -89,6 +89,14 @@ numpy
 
 The `-t` flag stands for *tag*; so it's what you're calling the docker image.
 
+![docker_build](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/docker_build.png)
+
+
+On completion, you see the image that you built in Docker Desktop:
+
+![docker_cntr](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/docker_desktop_img.png)
+
+
 **N.B. Don't forget the `.` at the end**
 
 ### 7. Run your container on port 8888
@@ -100,6 +108,13 @@ Windows:
 If you're on Mac or Linux:
 
 `docker run -p 8888:8888 -v "%PWD":/src --name data_science_docker_container jupyter_with_bespoke_python_packages`
+
+![docker_run](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/docker_run.png)
+
+
+You can now see the container running in Docker Desktop:
+
+![docker_cntr](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/docker_desktop_cntr.png)
 
 ### Explanation 
 
@@ -118,11 +133,18 @@ The `-v` flag stands for *volume*. What this does is mirrors the `/src` director
 
 ### 8. If it has started correctly, you'll get a url token. Copy the token provided into your brower URL
 
-It should look like this:
+It should look like this - look in the CLI readout in the screenshot above:
 
 http://127.0.0.1:8888/?token=3c96d2a50decb4302c3e96b87ba7444d286e335d07c478fe
 
-It should open up a Jupyter File explorer in the directory in your browser.
+It should open up a Jupyter File explorer in the project directory in your browser.
+
+
+You can now write jupyter Notebooks for data science.  
+**To make a new one, click the *NEW* button in the top right on the Juptyer File Explorer and select 'Python Notebook'.**  
+The files in the container should be mapped to the local directory specified in step 3.
+
+![docker_cntr](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/jupyter_files.png)
 
 ## Troubleshooting
 
@@ -131,15 +153,14 @@ If Jupyter won't open but the server is clearly running:
 * You should now see the see the jupyter server login page.
 * Copy the hashed token from the url given in command line output and paste it in the box
 
+![docker_cntr](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/jupyter_login.png)
+
 If it still doesn't work, try mapping port 8888 on the container side to a different port on the local machine side.  
 e.g. -p 9999:8888
 
 
 # Conclusion
 
-You can now write jupyter Notebooks for data science.  
-**To make a new one, click the *NEW* button in the top right on the Juptyer File Explorer and select 'Python Notebook'.**  
-The files in the container should be mapped to the local directory specified in step 3.
 
 I hope you find this useful and have fun!
 
