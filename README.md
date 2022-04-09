@@ -54,9 +54,9 @@ The format of the command should look *something like this* but with your path r
 
 `cd "C://PlaceholderPath/directory/my project/subfolder"`
 
-For example, the path to get to the directory where I have this git repo locally is:
+For example, I made an example folder on my desktop for the sake of demonstration:
 
-`cd "C:\Users\Alex\coding\data_analysis_dockers\Jupyter_with_requirements_TEMPLATE`
+`cd "C:\Users\Alex\OneDrive - University of Edinburgh\Desktop\example`
 
 * I have a tip for doing this which you may find useful:  
 * Open the project folder in File Explorer/Finder and 'Copy Address as text' (*See Image*), then paste that address into the Command Line **within double quotes**.  
