@@ -70,6 +70,10 @@ For example, the path to get to the directory where I have this git repo locally
 
 `git clone https://github.com/aperkins19/Docker_template_python_datascience_jupyter_bespoke_packages`
 
+![clone](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/git_clone.png)
+
+n.b. Git will download the whole repo into it's own folder so it's worth noting you'll have to navigate into that new folder to continue (or move everything up a level).
+
 ### 5. Define the python packages that you wish to use in `requirements.txt` file.
 e.g.  
 matplotlib  
