@@ -24,7 +24,7 @@ You also need to know roughly what Docker is and how it works, I will not be cov
 
 BUILD AND RUN DOCKER CONTAINER.
 
-### 1. Check Docker is installed.  
+### 1. Open a Command Line Interface (CLI), or Terminal if you're on Mac, & check Docker is installed.  
 
 If you've never installed Docker, use this tutorial.  
 https://www.youtube.com/watch?v=_9AWYlt86B8
@@ -32,7 +32,7 @@ https://www.youtube.com/watch?v=_9AWYlt86B8
 Check it's there:  
 `docker --version`
 
-### 2. Check that the docker Daemon is actually running.
+### 2. Check that the Docker Daemon is actually running.
 
 `docker ps`
 
@@ -48,7 +48,7 @@ This youtube vid will help you troubleshoot.
 https://www.youtube.com/watch?v=YFUhdxI4kcA
 
 
-### 3. Open command line and navigate to your project folder
+### 3. In your CLI, navigate to your project folder
 
 The format of the command should look *something like this* but with your path rather than the placeholder:
 
