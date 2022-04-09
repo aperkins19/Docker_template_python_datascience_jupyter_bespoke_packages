@@ -50,7 +50,7 @@ https://www.youtube.com/watch?v=YFUhdxI4kcA
 
 ### 3. Open command line and navigate to your project folder
 
-The format of the command should look something like this but with your path rather than the placeholder:
+The format of the command should look *something like this* but with your path rather than the placeholder:
 
 `cd "C://PlaceholderPath/directory/my project/subfolder"`
 
@@ -68,17 +68,23 @@ For example, the path to get to the directory where I have this git repo locally
 
 ### 4. Download/clone the repo from git or unzip the zip file.
 
-`docker clone https://github.com/aperkins19/Docker_template_python_datascience_jupyter_bespoke_packages`
+`git clone https://github.com/aperkins19/Docker_template_python_datascience_jupyter_bespoke_packages`
 
 ### 5. Define the python packages that you wish to use in `requirements.txt` file.
 e.g.  
 matplotlib  
 pandas  
-numpy  
+numpy
+
+**Note: Everytime you want to add, delete or change a package in your workflow, you must re-build the docker image** 
 
 ### 6. Build the docker image
 
 `docker build -t jupyter_with_bespoke_python_packages .`
+
+The `-t` flag stands for *tag*; so it's what you're calling the docker image.
+
+**N.B. Don't forget the `.` at the end**
 
 ### 7. Run your container on port 8888
 e.g.
@@ -115,7 +121,7 @@ If Jupyter won't open but the server is clearly running:
 * Copy the hashed token from the url given in command line output and paste it in the box
 
 If it still doesn't work, try mapping port 8888 on the container side to a different port on the local machine side.  
-e.g. -p 8888:9999
+e.g. -p 9999:8888
 
 
 # Conclusion
