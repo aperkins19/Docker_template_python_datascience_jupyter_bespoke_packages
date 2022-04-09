@@ -90,11 +90,11 @@ The `-t` flag stands for *tag*; so it's what you're calling the docker image.
 e.g.
 
 Windows:  
-`docker run -p 8888:8888 -v "%CD%":/src jupyter_with_bespoke_python_packages`
+`docker run -p 8888:8888 -v "%CD%":/src --name data_science_docker_container jupyter_with_bespoke_python_packages`
 
 If you're on Mac or Linux:
 
-`docker run -p 8888:8888 -v "%PWD":/src jupyter_with_bespoke_python_packages`
+`docker run -p 8888:8888 -v "%PWD":/src --name data_science_docker_container jupyter_with_bespoke_python_packages`
 
 
 If the image isn't already on your machine, it'll be downloaded.
@@ -103,6 +103,13 @@ The way it works is by:
 * Starting a Docker Container
 * Mounting your current directory ("%CD%") to a directory in the container ("/src") so that files can be shared and moved in and out.
 * Starting a jupyter server.
+
+The `-p` flag stands for port. So you're mapping port 8888 on your computer to port 8888 on the container. N.B. The Jupyter server runs on port 8888 inside the container which is why we map that port.
+
+The `-v` flag stands for volume. What this does is mirrors the `/src` directory inside container with the directory that you are currently in in your CLI `"%CD%"`so that files can be shared and moved in and out.
+
+`--name` I'm sure you can work out what this does.
+
 
 
 ### 8. If it has started correctly, you'll get a url token. Copy the token provided into your brower URL
