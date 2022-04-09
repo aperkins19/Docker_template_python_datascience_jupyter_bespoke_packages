@@ -6,6 +6,19 @@ If you have any issues or feedback, please contact me.
 Alex Perkins  
 a.j.p.perkins@sms.ed.ac.uk
 
+# Prerequisites & Assumed Knowledge
+
+**You must have Docker and Git installed.**
+
+You need to have a grasp what a Command Line Interface is. If you don't, watch this gentle tutorial:  
+
+#### Command Line Interface (CLI) For Beginners:  
+https://www.youtube.com/watch?v=mUXVBMhr7Xg
+
+
+You also need to know roughly what Docker is and how it works, I will not be covering those topics in this repo.
+
+
 
 # Usage
 
@@ -35,9 +48,15 @@ This youtube vid will help you troubleshoot.
 https://www.youtube.com/watch?v=YFUhdxI4kcA
 
 
-### 3. Open command line and navigate to the project folder
+### 3. Open command line and navigate to your project folder
 
-`cd "C://mypath/directory/my project/subfolder"`
+The format of the command should look something like this but with your path rather than the placeholder:
+
+`cd "C://PlaceholderPath/directory/my project/subfolder"`
+
+For example, the path to get to the directory where I have this git repo locally is:
+
+`cd "C:\Users\Alex\coding\data_analysis_dockers\Jupyter_with_requirements_TEMPLATE`
 
 * I have a tip for doing this which you may find useful:  
 * Open the project folder in File Explorer/Finder and 'Copy Address as text' (*See Image*), then paste that address into the Command Line **within double quotes**.  
