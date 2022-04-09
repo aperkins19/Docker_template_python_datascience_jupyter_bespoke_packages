@@ -76,7 +76,7 @@ matplotlib
 pandas  
 numpy
 
-**Note: Everytime you want to add, delete or change a package in your workflow, you must re-build the docker image** 
+**Note: Everytime you want to add, delete or change a package in your workflow, you must re-build the docker image**  
 ![requirements](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/requirements.png)
 
 ### 6. Build the docker image
