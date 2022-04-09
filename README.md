@@ -104,9 +104,9 @@ The way it works is by:
 * Mounting your current directory ("%CD%") to a directory in the container ("/src") so that files can be shared and moved in and out.
 * Starting a jupyter server on port 8888 inside the container which is then mapped to port 8888 on your local machine.
 
-The `-p` flag stands for port. So you're mapping port 8888 on your computer to port 8888 on the container. N.B. The Jupyter server runs on port 8888 inside the container which is why we map that port.
+The `-p` flag stands for *port*. So you're mapping port 8888 on your computer to port 8888 on the container. N.B. The Jupyter server runs on port 8888 inside the container which is why we map that port.
 
-The `-v` flag stands for volume. What this does is mirrors the `/src` directory inside container with the directory that you are currently in in your CLI `"%CD%"`so that files can be shared and moved in and out.
+The `-v` flag stands for *volume*. What this does is mirrors the `/src` directory inside container with the directory that you are currently in in your CLI `"%CD%"`so that files can be shared and moved in and out.
 
 `--name` I'm sure you can work out what this does.
 
