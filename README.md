@@ -63,7 +63,7 @@ For example, the path to get to the directory where I have this git repo locally
 * Be sure to stick the url in it's own quotes as below. This enters it as a string and will allow CMD to read any spaces in the path correctly.  
 * This will allow you to jump to the target directory in one step rather than tedious: `cd documents`, `cd labbook`, `cd myexperiments` navigation.  
 
-![navigation](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/git3/effecient_navigation.png)
+![nav](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/cmd_nav.png)
 
 
 ### 4. Download/clone the repo from git or unzip the zip file.
