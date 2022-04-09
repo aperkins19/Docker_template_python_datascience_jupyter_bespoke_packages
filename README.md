@@ -77,6 +77,7 @@ pandas
 numpy
 
 **Note: Everytime you want to add, delete or change a package in your workflow, you must re-build the docker image** 
+![requirements](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/requirments.png)
 
 ### 6. Build the docker image
 
@@ -96,13 +97,12 @@ If you're on Mac or Linux:
 
 `docker run -p 8888:8888 -v "%PWD":/src --name data_science_docker_container jupyter_with_bespoke_python_packages`
 
-
-If the image isn't already on your machine, it'll be downloaded.
+### Explanation 
 
 The way it works is by:
 * Starting a Docker Container
 * Mounting your current directory ("%CD%") to a directory in the container ("/src") so that files can be shared and moved in and out.
-* Starting a jupyter server.
+* Starting a jupyter server on port 8888 inside the container which is then mapped to port 8888 on your local machine.
 
 The `-p` flag stands for port. So you're mapping port 8888 on your computer to port 8888 on the container. N.B. The Jupyter server runs on port 8888 inside the container which is why we map that port.
 
