@@ -164,13 +164,19 @@ e.g. -p 9999:8888
 ### Moving files in and out
 
 Now that you've got Jupyter running and create a notebook - congratulations - you're setup to do datascience in Python.  
+
+
 Chances are you're going to want to be able to import some data into your notebook (say an excel file or similar), well to do that you move the excel file into your project folder (the one you created, downloaded the files into and used to run the docker container) and it should appear in the Jupyter File Explorer. If so then you should be able to import it into your notebook (say with a `df = pd.read_csv("my_raw_data.csv")` command or something.)  
+
+
 Similar with exporting plots, any figures you save (e.g. `plt.savefig()` or similar) should appear in the project folder where you can access them.
+
 
 I hope you find this useful and have fun!
 
 
-My full list of requirements for reference:  
+### My full list of requirements for reference:  
+
 numpy==1.16  
 pandas  
 matplotlib  
