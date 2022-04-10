@@ -107,7 +107,7 @@ Windows:
 
 If you're on Mac or Linux:
 
-`docker run -p 8888:8888 -v "%PWD":/src --name data_science_docker_container jupyter_with_bespoke_python_packages`
+`docker run -p 8888:8888 -v $(pwd):/src --name data_science_docker_container jupyter_with_bespoke_python_packages`
 
 ![docker_run](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/docker_run.png)
 
