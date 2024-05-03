@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+
+  python:
+    build: .
+    image: python
+    container_name: python
+    ports:
+      - 7002:7002
+
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+
+    volumes:
+      - ./:/app
+  
