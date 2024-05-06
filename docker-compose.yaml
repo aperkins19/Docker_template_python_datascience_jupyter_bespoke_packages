@@ -7,7 +7,7 @@ services:
     image: python
     container_name: python
     ports:
-      - 7002:7002
+      - 7003:7003
 
     stdin_open: true # docker run -i
     tty: true        # docker run -t

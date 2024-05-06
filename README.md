@@ -83,38 +83,15 @@ numpy
 **Note: Everytime you want to add, delete or change a package in your workflow, you must re-build the docker image**  
 ![requirements](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/requirements.png)
 
-### 6. Build the docker image
+### 6. Build and Launch the Docker container
 
-`docker build -t jupyter_with_bespoke_python_packages .`
-
-The `-t` flag stands for *tag*; so it's what you're calling the docker image.
-
-![docker_build](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/docker_build.png)
-
-
-On completion, you see the image that you built in Docker Desktop:
-
-![docker_cntr](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/docker_desktop_img.png)
-
+`sudo docker-compose up`
 
 **N.B. Don't forget the `.` at the end**
 
-### 7. Run your container on port 8888
-e.g.
+### 7. Enter.
 
-Windows:  
-`docker run -p 8888:8888 -v "%CD%":/src --name data_science_docker_container jupyter_with_bespoke_python_packages`
-
-If you're on Mac or Linux:
-
-`docker run -p 8888:8888 -v $(pwd):/src --name data_science_docker_container jupyter_with_bespoke_python_packages`
-
-![docker_run](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/docker_run.png)
-
-
-You can now see the container running in Docker Desktop:
-
-![docker_cntr](https://github.com/aperkins19/Git_Guide_for_Scientists/blob/main/Assets/docker_quick_start/docker_desktop_cntr.png)
+`sudo docker exec -t python /bin/bash`
 
 ### Explanation 
 
